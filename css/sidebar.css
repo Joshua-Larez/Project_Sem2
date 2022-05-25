@@ -1,0 +1,133 @@
+body {
+  background-image: url(../assets/img/background.png); 
+} 
+
+/* sidebar */
+.sidebar {
+  height: 100%;
+  width: 15em;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* background-color: #57595B; */
+  background-color: rgba(0, 255, 13, 0.664);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 80px;
+  overflow: hidden;
+  backdrop-filter: blur(10px)
+
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  /* color: rgb(255, 255, 255); */
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.sidebar a p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.sidebar a box-icon {
+  margin-right: 1.5em;
+  /* fill: white; */
+  fill: black;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.sidebar .closeOpenbtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 1em;
+}
+
+.openbtn:hover {
+  background-color: rgba(0, 255, 13, 0.664);
+  /* rgba(0, 255, 13, 0.664) */
+}
+
+/* top */
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  border-bottom: 1px solid black;
+  margin-left: 15em;
+  position:sticky;
+  top: 0;
+  background-color:rgba(0, 255, 13, 0.664);
+  /* background-color: #57595B; */
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px)
+}
+
+.topmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first{
+  /* color: white; */
+  display: flex;
+  flex-direction: row;
+  color: black;
+  white-space: nowrap;
+}
+
+.first img{
+  width: 79px;
+  height: 48px;
+}
+.first h4{
+  margin-left: 1em;
+  align-self: center;
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+
+.second div h6 {
+  margin: 0 1em 0 0;
+}
+
+.second div p {
+  margin: 0 1em 0 0;
+}
+
+.second div a box-icon {
+  margin: 0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* content */
+#content {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 15em;
+}

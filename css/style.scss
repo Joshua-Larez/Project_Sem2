@@ -1,0 +1,21 @@
+body {
+  background-image: url("../assets/img/blue-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px;
+}
+
+.border {
+  border: 1px solid black;
+  width: auto;
+  margin: auto;
+  margin-top: 10em;
+  padding: 1em 5em;
+}
+
+.header {
+  text-align: center;
+}
+
+.form-check-label {
+  font-size: 0.8em;
+}
